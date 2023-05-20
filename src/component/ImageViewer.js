@@ -1,6 +1,5 @@
 import { server } from "../lib/apiList";
 
-server
 const ImageViewer = ({profile}) =>{
     return  <img
     className="m-6 w-80"
