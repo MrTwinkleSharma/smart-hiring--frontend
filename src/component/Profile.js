@@ -17,7 +17,7 @@ import ModalExample from 'pdf-viewer-reactjs'
 
 import { SetPopupContext } from "../App";
 
-import apiList from "../lib/apiList";
+import apiList, { server } from "../lib/apiList";
 import PdfModal from "./PDFViewer";
 import ImageViewer from "./ImageViewer";
 
@@ -178,7 +178,7 @@ const Profile = (props) => {
   };
 
   const getResume = (resume) => {
-    const address = `http://localhost:4444/static/resume/${resume}`;
+    const address = `${server}/static/resume/${resume}`;
     console.log(address);
     axios(address, {
       method: "GET",
