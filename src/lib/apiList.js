@@ -1,4 +1,5 @@
-export const server = "http://localhost:4444";
+export const server = false ? "http://localhost:4444" : 'https://smart-hiring-backendnodejs.onrender.com';
+
 
 const apiList = {
   login: `${server}/auth/login`,
